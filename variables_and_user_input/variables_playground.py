@@ -25,7 +25,7 @@ message = f"today is {day}!"
 #Integers 
 #run distance in m
 run1_dist = 1400
- 
+run2_dist = 1800
 
 #addition
 total_dist = run1_dist + run2_dist
