@@ -49,8 +49,18 @@ c = [7, 8, 9]
 d = []
 e = []
 
-new_list2 = [[a] + [b] + [c]]
+new_list2 = [a] + [b] + [c]
 print(new_list2)
 
 new_list3 = a + b + c
 print(new_list3)
+
+# Q4 - option 2 append
+d.append(a)
+d.append(b)
+d.append(c)
+print(d)
+
+e.append(a)
+e.append(b)
+e.append(c)
