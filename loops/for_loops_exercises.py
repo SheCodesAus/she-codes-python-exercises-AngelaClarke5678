@@ -22,7 +22,15 @@ print(n)
 
 # Q3) Given a list, use a for loop to sum all the numbers in the list.
 random_numbers = [3, 5, 9, 1] 
-print(sum(random_numbers))
+print(sum(random_numbers)) #we would use this in practice but for this exercise do the below
+
+# Q3 alternate way
+sum = 0
+for i in random_numbers:
+    sum = sum + i
+else: print(sum)
+
+
 
 # Q4) Use a for loop to format and print the following list:
 mailing_list = [
