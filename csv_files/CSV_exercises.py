@@ -36,6 +36,28 @@ with open("csv_files/colours_20.csv") as file:
         occurrences = data. count(colour)
         print(f"Number of occurrences of the word {colour}: ", occurrences)
 
+print("Q4. Alternate way")
+
+list_words = ["red", "green", "blue", "yellow"]
+red_total = 0
+green_total = 0
+blue_total = 0
+yellow_total = 0
+
+with open("csv_files/colours_20.csv") as file:
+    file_reader = csv.reader(file,delimiter=",")
+    # next(file_reader) #skips header
+    for line in file_reader:
+        if list_words[0] in line[4]:
+                red_total += 1
+        elif list_words[1] in line[4]:
+                green_total += 1   
+        elif list_words[2] in line[4]:
+                blue_total += 1   
+        elif list_words[3] in line[4]:
+                yellow_total += 1    
+    print(f"Red: {red_total} Green: {green_total} Blue: {blue_total} Yellow: {yellow_total}")       
+
 print("Q5. galaxies.py contains data about 82 different galaxies and their velocities(km/sec). Using this data, output the galaxy with the slowest velocity, and the galaxy with the highest velocity.")
 
 with open("csv_files/galaxies.csv") as file:
