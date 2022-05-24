@@ -43,3 +43,8 @@ colours = [
 #     "yellow",
 #     "yellow"
 # ]
+
+for colour, count in colour_counts.items():
+    final_count = colour[count] 
+
+print(final_count)
